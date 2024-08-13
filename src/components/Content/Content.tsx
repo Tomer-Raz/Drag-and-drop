@@ -1,129 +1,130 @@
-import React, { useCallback, useState, useEffect } from "react";
-import { Layout, Select, Button } from "antd";
+import { useCallback } from 'react';
 import {
   ReactFlow,
-  ReactFlowProvider,
+  addEdge,
+  Background,
   useNodesState,
   useEdgesState,
-  addEdge,
-  Controls,
   MiniMap,
-  Background,
-  BackgroundVariant,
-  Panel,
-  NodeToolbar,
-} from "@xyflow/react";
-
-import "@xyflow/react/dist/style.css";
-import HeaderComp from "../Header/Header";
-import TextUpdaterNode from "./TextUpdaterNode";
-
-const { Content } = Layout;
-const { Option } = Select;
-
-const initialNodes = [
-  { id: "1", position: { x: 0, y: 0 }, data: { label: "1" }, type: 'textUpdater' },
-  { id: "2", position: { x: 0, y: 100 }, data: { label: "2" } },
-];
+  Controls,
+} from '@xyflow/react';
+import '@xyflow/react/dist/style.css';
+import { initialNodes } from './InitialElements';
+import azureResources from './azureResources.json'; // Import the JSON file
 
 const initialEdges = [
-  { id: "1-2", source: "1", target: "2", label: "to there" },
+  { id: 'e1-2', source: '1', target: '2', animated: true },
+  { id: 'e1-3', source: '1', target: '3' },
+  { id: 'e2a-4a', source: '2a', target: '4a' },
+  { id: 'e3-4b', source: '3', target: '4b' },
+  { id: 'e4a-4b1', source: '4a', target: '4b1' },
+  { id: 'e4a-4b2', source: '4a', target: '4b2' },
+  { id: 'e4b1-4b2', source: '4b1', target: '4b2' },
 ];
 
-const nodeTypes = {
-  textUpdater: TextUpdaterNode,
+const Sidebar = () => {
+  const onDragStart = (event: any, nodeType: any) => {
+    event.dataTransfer.setData('application/reactflow', nodeType);
+    event.dataTransfer.effectAllowed = 'move';
+  };
+
+  return (
+    <aside style={{ padding: '10px', borderRight: '1px solid #ddd', width: '250px' }}>
+      {azureResources.map((resource) => (
+        <div
+          key={resource.id}
+          onDragStart={(event: any) => onDragStart(event, resource.id)}
+          draggable
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            padding: '10px',
+            border: '1px solid #ddd',
+            marginBottom: '10px',
+            cursor: 'grab',
+            backgroundColor: '#fff',
+            borderRadius: '8px',
+            boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+            transition: 'transform 0.2s',
+          }}
+          onMouseOver={(e: any) => e.currentTarget.style.transform = 'scale(1.02)'}
+          onMouseOut={(e: any) => e.currentTarget.style.transform = 'scale(1.0)'}
+        >
+          <img
+            src={resource.logo}
+            alt={`${resource.label} logo`}
+            style={{ width: '24px', height: '24px', marginRight: '10px' }}
+          />
+          <span style={{ fontSize: '16px', fontWeight: '500', color: '#333' }}>
+            {resource.label}
+          </span>
+        </div>
+      ))}
+    </aside>
+  );
 };
 
-const CustomContent: React.FC = () => {
-  const [variant, setVariant] = useState("cross");
-  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
+const NestedFlow = () => {
+  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes as any);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
-  const [nodeText, setNodeText] = useState("Option 1");
 
   const onConnect = useCallback(
-    (params: any) => setEdges((eds) => addEdge(params, eds)),
+    (connection: any) => {
+      setEdges((eds) => addEdge(connection, eds));
+    },
     [setEdges]
   );
 
-  const onCreateNode = () => {
-    const newNode = {
-      id: `${nodes.length + 1}`,
-      position: { x: Math.random() * 400, y: Math.random() * 400 },
-      data: { label: nodeText },
-      type: 'textUpdater',
-    };
-    setNodes((nds) => [...nds, newNode]);
-  };
+  const onDrop = useCallback(
+    (event: any) => {
+      event.preventDefault();
 
-  useEffect(() => {
-    const centerNodes = () => {
-      const reactFlowWrapper = document.querySelector('.react-flow') as HTMLElement;
-      if (reactFlowWrapper) {
-        const { width, height } = reactFlowWrapper.getBoundingClientRect();
-        setNodes((nds) =>
-          nds.map((node) => ({
-            ...node,
-            position: {
-              x: width / 2 - 75,
-              y: height / 2 - 50,
-            },
-            positionAbsolute: { x: width / 2 - 75, y: height / 2 - 50 },
-          }))
-        );
-      }
-    };
+      const reactFlowBounds = event.target.getBoundingClientRect();
+      const type = event.dataTransfer.getData('application/reactflow');
+      const position = event.clientY - reactFlowBounds.top;
+      const xPosition = event.clientX - reactFlowBounds.left;
+      const id = (nodes.length + 1).toString();
 
-    centerNodes();
+      const newNode = {
+        id,
+        type,
+        position: {
+          x: xPosition,
+          y: position,
+        },
+        data: { label: `${type.replace('-', ' ').toUpperCase()}` },
+      };
+
+      setNodes((nds) => nds.concat(newNode));
+    },
+    [nodes, setNodes]
+  );
+
+  const onDragOver = useCallback((event: any) => {
+    event.preventDefault();
+    event.dataTransfer.dropEffect = 'move';
   }, []);
 
   return (
-    <Content style={{ margin: 0, padding: 0, backgroundColor: "transparent" }}>
-      <div style={{ width: "100%", height: "100%", padding: "24px" }}>
-        <ReactFlowProvider>
-          <ReactFlow
-            nodes={nodes}
-            edges={edges}
-            onNodesChange={onNodesChange}
-            onEdgesChange={onEdgesChange}
-            onConnect={onConnect}
-            nodeTypes={nodeTypes}
-            className="react-flow"
-          >
-            <Controls />
-            <MiniMap />
-            {/* <Panel children={<HeaderComp />} position="top-center" /> */}
-            <Panel position="top-right">
-              <div>variant:</div>
-              <button onClick={() => setVariant(BackgroundVariant.Dots)}>
-                dots
-              </button>
-              <button onClick={() => setVariant(BackgroundVariant.Cross)}>
-                cross
-              </button>
-              <button onClick={() => setVariant(BackgroundVariant.Lines)}>
-                lines
-              </button>
-            </Panel>
-            <Panel position="bottom-left">
-              <Select
-                defaultValue="Option 1"
-                style={{ width: 120 }}
-                onChange={(value) => setNodeText(value)}
-              >
-                <Option value="Option 1">Option 1</Option>
-                <Option value="Option 2">Option 2</Option>
-              </Select>
-              <Button type="primary" onClick={onCreateNode} style={{ marginLeft: 10 }}>
-                Create Node
-              </Button>
-            </Panel>
-            <NodeToolbar />
-            <Background variant={variant as BackgroundVariant} gap={12} />
-          </ReactFlow>
-        </ReactFlowProvider>
-      </div>
-    </Content>
+    <div style={{ display: 'flex', height: '100vh' }}>
+      <Sidebar />
+      <ReactFlow
+        nodes={nodes}
+        edges={edges}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
+        onConnect={onConnect}
+        onDrop={onDrop}
+        onDragOver={onDragOver}
+        className="react-flow-subflows-example"
+        fitView
+      >
+        <MiniMap />
+        <Controls />
+        <Background />
+      </ReactFlow>
+    </div>
   );
 };
 
-export default CustomContent;
+export default NestedFlow;
