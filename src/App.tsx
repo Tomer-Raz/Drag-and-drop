@@ -3,7 +3,7 @@ import { Breadcrumb, Layout, theme } from "antd";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
 import HeaderComp from "./components/Header/Header";
-import CustomContent from "./components/Content/Content";
+import CustomContent from "./components/Content/Content/Content";
 
 const { Content, Footer } = Layout;
 
@@ -14,7 +14,7 @@ const Option1: React.FC = () => {
 
   return (
     <>
-      <HeaderComp/>
+      <HeaderComp />
       <Content style={{ margin: "0 16px" }}>
         <Breadcrumb style={{ margin: "16px 0" }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>

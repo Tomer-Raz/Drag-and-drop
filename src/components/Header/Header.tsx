@@ -1,19 +1,10 @@
-import "./Header.css";
-import { Layout } from "antd";
-
-const { Header } = Layout;
+import { StyledHeader } from './Header.styles';
 
 const HeaderComp = () => {
   return (
-    <Header
-      style={{
-        textAlign: "center",
-        backgroundColor: "white",
-        fontSize: "22px",
-      }}
-    >
+    <StyledHeader>
       <div>Header</div>
-    </Header>
+    </StyledHeader>
   );
 };
 

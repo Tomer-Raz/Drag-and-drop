@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import { Layout, Menu } from "antd";
-import { DesktopOutlined, PieChartOutlined } from "@ant-design/icons";
-import { useNavigate } from "react-router-dom";
-import type { MenuProps } from "antd";
-import "./Sidebar.css";
+import React, { useState } from 'react';
+import { Menu } from 'antd';
+import { DesktopOutlined, PieChartOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
+import type { MenuProps } from 'antd';
+import { StyledSider } from './Sidebar.styles';
 
-const { Sider } = Layout;
-
-type MenuItem = Required<MenuProps>["items"][number];
+type MenuItem = Required<MenuProps>['items'][number];
 
 const getItem = (
   label: React.ReactNode,
@@ -24,33 +22,32 @@ const getItem = (
 };
 
 const items: MenuItem[] = [
-  getItem("Home", "/home", <PieChartOutlined />),
-  getItem("Demo", "/demo", <DesktopOutlined />),
+  getItem('Home', '/home', <PieChartOutlined />),
+  getItem('Demo', '/demo', <DesktopOutlined />),
 ];
 
 const Sidebar: React.FC = () => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const navigate = useNavigate();
 
-  const onClick: MenuProps["onClick"] = (e) => {
+  const onClick: MenuProps['onClick'] = (e) => {
     navigate(e.key);
   };
 
   return (
-    <Sider
+    <StyledSider
       collapsible
       collapsed={collapsed}
       onCollapse={(value) => setCollapsed(value)}
     >
-      <div className="demo-logo-vertical" />
       <Menu
         theme="dark"
-        defaultSelectedKeys={["/option1"]}
+        defaultSelectedKeys={['/option1']}
         mode="inline"
         items={items}
         onClick={onClick}
       />
-    </Sider>
+    </StyledSider>
   );
 };
 
