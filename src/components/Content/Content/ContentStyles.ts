@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ export const SidebarContainer = styled.div`
 export const SidebarItem = styled.div`
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
   margin-bottom: 8px;
   background: #ffffff;
   border-radius: 4px;

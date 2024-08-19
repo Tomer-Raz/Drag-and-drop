@@ -1,366 +1,496 @@
 [
   {
-    "category": "Compute",
+    "category": "AI + ML",
     "resources": [
       {
-        "id": "virtual-machines",
-        "label": "Virtual Machines",
-        "logo": "https://azure.microsoft.com/svghandler/virtual-machines/?width=600&height=315"
+        "id": "ai-anomaly-detector",
+        "label": "AI Anomaly Detector",
+        "logo": "https://azure.microsoft.com/svghandler/anomaly-detector/?width=600&height=600"
       },
       {
-        "id": "resource-group",
-        "label": "Resource Group",
-        "logo": "https://www.ssw.com.au/rules/static/97576d71a125f696f1f6d61b1e7efd24/6f3f2/icon-naming-azure_1710232021931.png"
+        "id": "ai-bot-service",
+        "label": "Azure AI Bot Service",
+        "logo": "https://azure.microsoft.com/svghandler/bot-service/?width=600&height=600"
       },
       {
-        "id": "function-app",
-        "label": "Function App",
-        "logo": "https://ms-azuretools.gallerycdn.vsassets.io/extensions/ms-azuretools/vscode-azurefunctions/1.15.2/1723154983964/Microsoft.VisualStudio.Services.Icons.Default"
-      },
-      {
-        "id": "app-service",
-        "label": "App Service",
-        "logo": "https://w7.pngwing.com/pngs/135/459/png-transparent-microsoft-azure-web-application-software-deployment-platform-as-a-service-help-portal-sphere-microsoft-azure-web-application-thumbnail.png"
-      },
-      {
-        "id": "container-instances",
-        "label": "Container Instances",
-        "logo": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/container-instances?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=80&hei=80&qlt=100&fmt=png-alpha&fit=constrain"
-      },
-      {
-        "id": "aks",
-        "label": "Azure Kubernetes Service (AKS)",
-        "logo": "https://azure.microsoft.com/svghandler/kubernetes-service/?width=600&height=315"
-      },
-      {
-        "id": "virtual-machine-scale-sets",
-        "label": "Virtual Machine Scale Sets",
-        "logo": "https://azure.microsoft.com/svghandler/virtual-machine-scale-sets/?width=600&height=315"
-      },
-      {
-        "id": "azure-batch",
-        "label": "Azure Batch",
-        "logo": "https://azure.microsoft.com/svghandler/batch/?width=600&height=315"
-      },
-      {
-        "id": "availability-sets",
-        "label": "Availability Sets",
-        "logo": "https://azure.microsoft.com/svghandler/availability-sets/?width=600&height=315"
-      },
-      {
-        "id": "dedicated-hosts",
-        "label": "Dedicated Hosts",
-        "logo": "https://azure.microsoft.com/svghandler/dedicated-hosts/?width=600&height=315"
-      },
-      {
-        "id": "proximity-placement-groups",
-        "label": "Proximity Placement Groups",
-        "logo": "https://azure.microsoft.com/svghandler/proximity-placement-groups/?width=600&height=315"
-      },
-      {
-        "id": "vm-images",
-        "label": "VM Images",
-        "logo": "https://azure.microsoft.com/svghandler/vm-images/?width=600&height=315"
-      },
-      {
-        "id": "azure-autoscale",
-        "label": "Azure Autoscale",
-        "logo": "https://azure.microsoft.com/svghandler/autoscale/?width=600&height=315"
-      }
-    ]
-  },
-  {
-    "category": "Networking",
-    "resources": [
-      {
-        "id": "virtual-network",
-        "label": "Virtual Network",
-        "logo": "https://www.checkpoint.com/wp-content/uploads/microsoft-azure-virtual-networks-vnet.png"
-      },
-      {
-        "id": "application-gateway",
-        "label": "Application Gateway",
-        "logo": "https://symbols.getvecta.com/stencil_28/6_application-gateway.ab007e631b.png"
-      },
-      {
-        "id": "load-balancer",
-        "label": "Load Balancer",
-        "logo": "https://azure.microsoft.com/svghandler/load-balancer/?width=600&height=315"
-      },
-      {
-        "id": "vpn-gateway",
-        "label": "VPN Gateway",
-        "logo": "https://azure.microsoft.com/svghandler/vpn-gateway/?width=600&height=315"
-      },
-      {
-        "id": "traffic-manager",
-        "label": "Traffic Manager",
-        "logo": "https://azure.microsoft.com/svghandler/traffic-manager/?width=600&height=315"
-      },
-      {
-        "id": "expressroute",
-        "label": "ExpressRoute",
-        "logo": "https://azure.microsoft.com/svghandler/expressroute/?width=600&height=315"
-      },
-      {
-        "id": "dns",
-        "label": "Azure DNS",
-        "logo": "https://azure.microsoft.com/svghandler/dns/?width=600&height=315"
-      },
-      {
-        "id": "firewall",
-        "label": "Azure Firewall",
-        "logo": "https://azure.microsoft.com/svghandler/firewall/?width=600&height=315"
-      },
-      {
-        "id": "network-watcher",
-        "label": "Network Watcher",
-        "logo": "https://azure.microsoft.com/svghandler/network-watcher/?width=600&height=315"
-      },
-      {
-        "id": "subnet",
-        "label": "Subnet",
-        "logo": "https://azure.microsoft.com/svghandler/subnets/?width=600&height=315"
-      },
-      {
-        "id": "public-ip-addresses",
-        "label": "Public IP Addresses",
-        "logo": "https://azure.microsoft.com/svghandler/public-ip-addresses/?width=600&height=315"
-      },
-      {
-        "id": "private-link",
-        "label": "Private Link",
-        "logo": "https://azure.microsoft.com/svghandler/private-link/?width=600&height=315"
-      }
-    ]
-  },
-  {
-    "category": "Storage",
-    "resources": [
-      {
-        "id": "storage-account",
-        "label": "Storage Account",
-        "logo": "https://ms-azuretools.gallerycdn.vsassets.io/extensions/ms-azuretools/vscode-azurestorage/0.16.0/1720461176238/Microsoft.VisualStudio.Services.Icons.Default"
-      },
-      {
-        "id": "cosmos-db",
-        "label": "Cosmos DB",
-        "logo": "https://devblogs.microsoft.com/cosmosdb/wp-content/uploads/sites/52/2022/12/CosmosDB_logo_2019.png"
-      },
-      {
-        "id": "sql-database",
-        "label": "SQL Database",
-        "logo": "https://c0.klipartz.com/pngpicture/525/959/gratis-png-base-de-datos-microsoft-azure-sql-servidor-microsoft-sql-cloud-computing-thumbnail.png"
-      },
-      {
-        "id": "managed-disks",
-        "label": "Managed Disks",
-        "logo": "https://azure.microsoft.com/svghandler/managed-disks/?width=600&height=315"
-      },
-      {
-        "id": "blob-storage",
-        "label": "Blob Storage",
-        "logo": "https://azure.microsoft.com/svghandler/storage/blobs/?width=600&height=315"
-      },
-      {
-        "id": "file-storage",
-        "label": "File Storage",
-        "logo": "https://azure.microsoft.com/svghandler/storage/files/?width=600&height=315"
-      },
-      {
-        "id": "table-storage",
-        "label": "Table Storage",
-        "logo": "https://azure.microsoft.com/svghandler/storage/tables/?width=600&height=315"
-      },
-      {
-        "id": "queue-storage",
-        "label": "Queue Storage",
-        "logo": "https://azure.microsoft.com/svghandler/storage/queues/?width=600&height=315"
-      },
-      {
-        "id": "data-lake-storage",
-        "label": "Data Lake Storage",
-        "logo": "https://azure.microsoft.com/svghandler/data-lake-storage/?width=600&height=315"
-      },
-      {
-        "id": "data-box",
-        "label": "Azure Data Box",
-        "logo": "https://azure.microsoft.com/svghandler/data-box/?width=600&height=315"
-      },
-      {
-        "id": "archive-storage",
-        "label": "Archive Storage",
-        "logo": "https://azure.microsoft.com/svghandler/storage/archive/?width=600&height=315"
-      },
-      {
-        "id": "storage-blob-lifecycle-management",
-        "label": "Blob Lifecycle Management",
-        "logo": "https://azure.microsoft.com/svghandler/storage/lifecycle-management/?width=600&height=315"
-      }
-    ]
-  },
-  {
-    "category": "Identity",
-    "resources": [
-      {
-        "id": "key-vault",
-        "label": "Key Vault",
-        "logo": "https://www.isjw.uk/images/azure/keyvault.png"
-      },
-      {
-        "id": "azure-ad",
-        "label": "Azure Active Directory",
-        "logo": "https://azure.microsoft.com/svghandler/active-directory/?width=600&height=315"
-      },
-      {
-        "id": "managed-identities",
-        "label": "Managed Identities",
-        "logo": "https://azure.microsoft.com/svghandler/managed-identities/?width=600&height=315"
-      },
-      {
-        "id": "b2c",
-        "label": "Azure AD B2C",
-        "logo": "https://azure.microsoft.com/svghandler/active-directory-b2c/?width=600&height=315"
-      },
-      {
-        "id": "policies",
-        "label": "Conditional Access Policies",
-        "logo": "https://azure.microsoft.com/svghandler/active-directory/?width=600&height=315"
-      },
-      {
-        "id": "multi-factor-authentication",
-        "label": "Multi-Factor Authentication",
-        "logo": "https://azure.microsoft.com/svghandler/multi-factor-authentication/?width=600&height=315"
-      },
-      {
-        "id": "azure-ad-connect",
-        "label": "Azure AD Connect",
-        "logo": "https://azure.microsoft.com/svghandler/ad-connect/?width=600&height=315"
-      },
-      {
-        "id": "privileged-identity-management",
-        "label": "Privileged Identity Management",
-        "logo": "https://azure.microsoft.com/svghandler/privileged-identity-management/?width=600&height=315"
-      },
-      {
-        "id": "azure-ad-domain-services",
-        "label": "Azure AD Domain Services",
-        "logo": "https://azure.microsoft.com/svghandler/ad-domain-services/?width=600&height=315"
-      },
-      {
-        "id": "role-based-access-control",
-        "label": "Role-Based Access Control",
-        "logo": "https://azure.microsoft.com/svghandler/role-based-access-control/?width=600&height=315"
-      }
-    ]
-  },
-  {
-    "category": "AI + Machine Learning",
-    "resources": [
-      {
-        "id": "cognitive-services",
-        "label": "Cognitive Services",
-        "logo": "https://azure.microsoft.com/svghandler/cognitive-services/?width=600&height=315"
-      },
-      {
-        "id": "machine-learning",
-        "label": "Machine Learning",
-        "logo": "https://azure.microsoft.com/svghandler/machine-learning/?width=600&height=315"
-      },
-      {
-        "id": "bot-services",
-        "label": "Bot Services",
-        "logo": "https://azure.microsoft.com/svghandler/bot-services/?width=600&height=315"
-      },
-      {
-        "id": "azure-synapse",
-        "label": "Azure Synapse",
-        "logo": "https://azure.microsoft.com/svghandler/synapse-analytics/?width=600&height=315"
+        "id": "ai-search",
+        "label": "Azure AI Search",
+        "logo": "https://azure.microsoft.com/svghandler/search/?width=600&height=600"
       },
       {
         "id": "databricks",
         "label": "Azure Databricks",
-        "logo": "https://azure.microsoft.com/svghandler/databricks/?width=600&height=315"
+        "logo": "https://azure.microsoft.com/svghandler/databricks/?width=600&height=600"
       },
       {
-        "id": "ai-machine-learning-studio",
-        "label": "Azure Machine Learning Studio",
-        "logo": "https://azure.microsoft.com/svghandler/machine-learning-studio/?width=600&height=315"
+        "id": "machine-learning",
+        "label": "Azure Machine Learning",
+        "logo": "https://azure.microsoft.com/svghandler/machine-learning/?width=600&height=600"
       },
       {
-        "id": "form-recognizer",
-        "label": "Form Recognizer",
-        "logo": "https://azure.microsoft.com/svghandler/form-recognizer/?width=600&height=315"
+        "id": "open-datasets",
+        "label": "Azure Open Datasets",
+        "logo": "https://azure.microsoft.com/svghandler/open-datasets/?width=600&height=600"
       },
       {
-        "id": "speech-service",
-        "label": "Speech Service",
-        "logo": "https://azure.microsoft.com/svghandler/speech-service/?width=600&height=315"
+        "id": "ai-services",
+        "label": "Azure AI Services",
+        "logo": "https://azure.microsoft.com/svghandler/ai-services/?width=600&height=600"
       },
       {
-        "id": "text-analytics",
-        "label": "Text Analytics",
-        "logo": "https://azure.microsoft.com/svghandler/text-analytics/?width=600&height=315"
+        "id": "ai-video-indexer",
+        "label": "Azure AI Video Indexer",
+        "logo": "https://azure.microsoft.com/svghandler/video-indexer/?width=600&height=600"
       },
       {
-        "id": "anomaly-detector",
-        "label": "Anomaly Detector",
-        "logo": "https://azure.microsoft.com/svghandler/anomaly-detector/?width=600&height=315"
+        "id": "ai-custom-vision",
+        "label": "Azure AI Custom Vision",
+        "logo": "https://azure.microsoft.com/svghandler/custom-vision/?width=600&height=600"
+      },
+      {
+        "id": "data-science-vm",
+        "label": "Data Science Virtual Machines",
+        "logo": "https://azure.microsoft.com/svghandler/data-science-virtual-machines/?width=600&height=600"
+      },
+      {
+        "id": "luis",
+        "label": "Language Understanding (LUIS)",
+        "logo": "https://azure.microsoft.com/svghandler/luis/?width=600&height=600"
+      },
+      {
+        "id": "speaker-recognition",
+        "label": "Speaker Recognition",
+        "logo": "https://azure.microsoft.com/svghandler/speaker-recognition/?width=600&height=600"
+      },
+      {
+        "id": "speech-to-text",
+        "label": "Speech to Text",
+        "logo": "https://azure.microsoft.com/svghandler/speech-to-text/?width=600&height=600"
+      },
+      {
+        "id": "speech-translation",
+        "label": "Speech Translation",
+        "logo": "https://azure.microsoft.com/svghandler/speech-translation/?width=600&height=600"
+      },
+      {
+        "id": "ai-language",
+        "label": "Azure AI Language",
+        "logo": "https://azure.microsoft.com/svghandler/ai-language/?width=600&height=600"
+      },
+      {
+        "id": "text-to-speech",
+        "label": "Text to Speech",
+        "logo": "https://azure.microsoft.com/svghandler/text-to-speech/?width=600&height=600"
+      },
+      {
+        "id": "ai-translator",
+        "label": "Azure AI Translator",
+        "logo": "https://azure.microsoft.com/svghandler/translator/?width=600&height=600"
+      },
+      {
+        "id": "ai-metrics-advisor",
+        "label": "Azure AI Metrics Advisor",
+        "logo": "https://azure.microsoft.com/svghandler/metrics-advisor/?width=600&height=600"
+      },
+      {
+        "id": "openai-service",
+        "label": "Azure OpenAI Service",
+        "logo": "https://azure.microsoft.com/svghandler/openai-service/?width=600&height=600"
+      },
+      {
+        "id": "ai-personalizer",
+        "label": "Azure AI Personalizer",
+        "logo": "https://azure.microsoft.com/svghandler/personalizer/?width=600&height=600"
+      },
+      {
+        "id": "ai-content-safety",
+        "label": "Azure AI Content Safety",
+        "logo": "https://azure.microsoft.com/svghandler/content-safety/?width=600&height=600"
+      },
+      {
+        "id": "health-bot",
+        "label": "Health Bot",
+        "logo": "https://azure.microsoft.com/svghandler/health-bot/?width=600&height=600"
+      },
+      {
+        "id": "ai-document-intelligence",
+        "label": "Azure AI Document Intelligence",
+        "logo": "https://azure.microsoft.com/svghandler/document-intelligence/?width=600&height=600"
+      },
+      {
+        "id": "ai-studio",
+        "label": "Azure AI Studio",
+        "logo": "https://azure.microsoft.com/svghandler/ai-studio/?width=600&height=600"
+      },
+      {
+        "id": "operator-call-protection",
+        "label": "Azure Operator Call Protection",
+        "logo": "https://azure.microsoft.com/svghandler/operator-call-protection/?width=600&height=600"
+      },
+      {
+        "id": "copilot-security",
+        "label": "Microsoft Copilot for Security",
+        "logo": "https://azure.microsoft.com/svghandler/copilot-for-security/?width=600&height=600"
+      },
+      {
+        "id": "ai-immersive-reader",
+        "label": "Azure AI Immersive Reader",
+        "logo": "https://azure.microsoft.com/svghandler/immersive-reader/?width=600&height=600"
+      },
+      {
+        "id": "phi-3-open-models",
+        "label": "Phi-3 Open Models",
+        "logo": "https://azure.microsoft.com/svghandler/phi-3-open-models/?width=600&height=600"
       }
     ]
   },
   {
-    "category": "Security",
+    "category": "Analytics",
     "resources": [
       {
-        "id": "azure-security-center",
-        "label": "Azure Security Center",
-        "logo": "https://azure.microsoft.com/svghandler/security-center/?width=600&height=315"
+        "id": "analysis-services",
+        "label": "Azure Analysis Services",
+        "logo": "https://azure.microsoft.com/svghandler/analysis-services/?width=600&height=600"
       },
       {
-        "id": "sentinel",
-        "label": "Azure Sentinel",
-        "logo": "https://azure.microsoft.com/svghandler/sentinel/?width=600&height=315"
+        "id": "data-explorer",
+        "label": "Azure Data Explorer",
+        "logo": "https://azure.microsoft.com/svghandler/data-explorer/?width=600&height=600"
       },
       {
-        "id": "defender",
-        "label": "Microsoft Defender for Cloud",
-        "logo": "https://azure.microsoft.com/svghandler/defender-for-cloud/?width=600&height=315"
+        "id": "data-factory",
+        "label": "Azure Data Factory",
+        "logo": "https://azure.microsoft.com/svghandler/data-factory/?width=600&height=600"
       },
       {
-        "id": "azure-key-vault",
-        "label": "Azure Key Vault",
-        "logo": "https://www.isjw.uk/images/azure/keyvault.png"
+        "id": "data-lake-storage",
+        "label": "Azure Data Lake Storage",
+        "logo": "https://azure.microsoft.com/svghandler/data-lake-storage/?width=600&height=600"
       },
       {
-        "id": "firewall",
-        "label": "Azure Firewall",
-        "logo": "https://azure.microsoft.com/svghandler/firewall/?width=600&height=315"
+        "id": "data-share",
+        "label": "Azure Data Share",
+        "logo": "https://azure.microsoft.com/svghandler/data-share/?width=600&height=600"
       },
       {
-        "id": "application-security-groups",
-        "label": "Application Security Groups",
-        "logo": "https://azure.microsoft.com/svghandler/application-security-groups/?width=600&height=315"
+        "id": "databricks",
+        "label": "Azure Databricks",
+        "logo": "https://azure.microsoft.com/svghandler/databricks/?width=600&height=600"
       },
       {
-        "id": "policy-compliance",
-        "label": "Azure Policy Compliance",
-        "logo": "https://azure.microsoft.com/svghandler/policy-compliance/?width=600&height=315"
+        "id": "stream-analytics",
+        "label": "Azure Stream Analytics",
+        "logo": "https://azure.microsoft.com/svghandler/stream-analytics/?width=600&height=600"
       },
       {
-        "id": "ddos-protection",
-        "label": "DDoS Protection",
-        "logo": "https://azure.microsoft.com/svghandler/ddos-protection/?width=600&height=315"
+        "id": "synapse-analytics",
+        "label": "Azure Synapse Analytics",
+        "logo": "https://azure.microsoft.com/svghandler/synapse-analytics/?width=600&height=600"
       },
       {
-        "id": "encryption",
-        "label": "Azure Encryption",
-        "logo": "https://azure.microsoft.com/svghandler/encryption/?width=600&height=315"
+        "id": "data-catalog",
+        "label": "Data Catalog",
+        "logo": "https://azure.microsoft.com/svghandler/data-catalog/?width=600&height=600"
       },
       {
-        "id": "security-insights",
-        "label": "Security Insights",
-        "logo": "https://azure.microsoft.com/svghandler/security-insights/?width=600&height=315"
+        "id": "data-lake-analytics",
+        "label": "Data Lake Analytics",
+        "logo": "https://azure.microsoft.com/svghandler/data-lake-analytics/?width=600&height=600"
+      },
+      {
+        "id": "event-hubs",
+        "label": "Event Hubs",
+        "logo": "https://azure.microsoft.com/svghandler/event-hubs/?width=600&height=600"
+      },
+      {
+        "id": "hdinsight",
+        "label": "HDInsight",
+        "logo": "https://azure.microsoft.com/svghandler/hdinsight/?width=600&height=600"
+      },
+      {
+        "id": "power-bi-embedded",
+        "label": "Power BI Embedded",
+        "logo": "https://azure.microsoft.com/svghandler/power-bi-embedded/?width=600&height=600"
+      },
+      {
+        "id": "graph-data-connect",
+        "label": "Microsoft Graph Data Connect",
+        "logo": "https://azure.microsoft.com/svghandler/graph-data-connect/?width=600&height=600"
+      },
+      {
+        "id": "chaos-studio",
+        "label": "Azure Chaos Studio",
+        "logo": "https://azure.microsoft.com/svghandler/chaos-studio/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-fabric",
+        "label": "Microsoft Fabric",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-fabric/?width=600&height=600"
+      },
+      {
+        "id": "purview",
+        "label": "Microsoft Purview",
+        "logo": "https://azure.microsoft.com/svghandler/purview/?width=600&height=600"
+      },
+      {
+        "id": "hdinsight-aks",
+        "label": "Azure HDInsight on Azure Kubernetes Service (AKS)",
+        "logo": "https://azure.microsoft.com/svghandler/hdinsight-aks/?width=600&height=600"
+      },
+      {
+        "id": "operator-insights",
+        "label": "Azure Operator Insights",
+        "logo": "https://azure.microsoft.com/svghandler/operator-insights/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Compute",
+    "resources": [
+      {
+        "id": "virtual-machines",
+        "label": "Azure Virtual Machines",
+        "logo": "https://azure.microsoft.com/svghandler/virtual-machines/?width=600&height=600"
+      },
+      {
+        "id": "kubernetes-service",
+        "label": "Azure Kubernetes Service (AKS)",
+        "logo": "https://azure.microsoft.com/svghandler/kubernetes-service/?width=600&height=600"
+      },
+      {
+        "id": "functions",
+        "label": "Azure Functions",
+        "logo": "https://azure.microsoft.com/svghandler/functions/?width=600&height=600"
+      },
+      {
+        "id": "spring-apps",
+        "label": "Azure Spring Apps",
+        "logo": "https://azure.microsoft.com/svghandler/spring-apps/?width=600&height=600"
+      },
+      {
+        "id": "vmware-solution",
+        "label": "Azure VMware Solution",
+        "logo": "https://azure.microsoft.com/svghandler/vmware-solution/?width=600&height=600"
+      },
+      {
+        "id": "dedicated-host",
+        "label": "Azure Dedicated Host",
+        "logo": "https://azure.microsoft.com/svghandler/dedicated-host/?width=600&height=600"
+      },
+      {
+        "id": "batch",
+        "label": "Azure Batch",
+        "logo": "https://azure.microsoft.com/svghandler/batch/?width=600&height=600"
+      },
+      {
+        "id": "service-fabric",
+        "label": "Azure Service Fabric",
+        "logo": "https://azure.microsoft.com/svghandler/service-fabric/?width=600&height=600"
+      },
+      {
+        "id": "app-service",
+        "label": "Azure App Service",
+        "logo": "https://azure.microsoft.com/svghandler/app-service/?width=600&height=600"
+      },
+      {
+        "id": "quantum",
+        "label": "Azure Quantum",
+        "logo": "https://azure.microsoft.com/svghandler/quantum/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Containers",
+    "resources": [
+      {
+        "id": "kubernetes-service",
+        "label": "Azure Kubernetes Service (AKS)",
+        "logo": "https://azure.microsoft.com/svghandler/kubernetes-service/?width=600&height=600"
+      },
+      {
+        "id": "red-hat-openshift",
+        "label": "Azure Red Hat OpenShift",
+        "logo": "https://azure.microsoft.com/svghandler/red-hat-openshift/?width=600&height=600"
+      },
+      {
+        "id": "container-instances",
+        "label": "Azure Container Instances",
+        "logo": "https://azure.microsoft.com/svghandler/container-instances/?width=600&height=600"
+      },
+      {
+        "id": "container-registry",
+        "label": "Azure Container Registry",
+        "logo": "https://azure.microsoft.com/svghandler/container-registry/?width=600&height=600"
+      },
+      {
+        "id": "container-apps",
+        "label": "Azure Container Apps",
+        "logo": "https://azure.microsoft.com/svghandler/container-apps/?width=600&height=600"
+      },
+      {
+        "id": "web-app-for-containers",
+        "label": "Web App for Containers",
+        "logo": "https://azure.microsoft.com/svghandler/web-app-for-containers/?width=600&height=600"
+      },
+      {
+        "id": "container-storage",
+        "label": "Azure Container Storage",
+        "logo": "https://azure.microsoft.com/svghandler/container-storage/?width=600&height=600"
+      },
+      {
+        "id": "kubernetes-fleet-manager",
+        "label": "Azure Kubernetes Fleet Manager",
+        "logo": "https://azure.microsoft.com/svghandler/kubernetes-fleet-manager/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Databases",
+    "resources": [
+      {
+        "id": "cache-for-redis",
+        "label": "Azure Cache for Redis",
+        "logo": "https://azure.microsoft.com/svghandler/cache-for-redis/?width=600&height=600"
+      },
+      {
+        "id": "cosmos-db",
+        "label": "Azure Cosmos DB",
+        "logo": "https://azure.microsoft.com/svghandler/cosmos-db/?width=600&height=600"
+      },
+      {
+        "id": "data-factory",
+        "label": "Azure Data Factory",
+        "logo": "https://azure.microsoft.com/svghandler/data-factory/?width=600&height=600"
+      },
+      {
+        "id": "database-for-mariadb",
+        "label": "Azure Database for MariaDB",
+        "logo": "https://azure.microsoft.com/svghandler/database-for-mariadb/?width=600&height=600"
+      },
+      {
+        "id": "database-for-mysql",
+        "label": "Azure Database for MySQL",
+        "logo": "https://azure.microsoft.com/svghandler/database-for-mysql/?width=600&height=600"
+      },
+      {
+        "id": "database-for-postgresql",
+        "label": "Azure Database for PostgreSQL",
+        "logo": "https://azure.microsoft.com/svghandler/database-for-postgresql/?width=600&height=600"
+      },
+      {
+        "id": "database-migration-service",
+        "label": "Azure Database Migration Service",
+        "logo": "https://azure.microsoft.com/svghandler/database-migration-service/?width=600&height=600"
+      },
+      {
+        "id": "sql",
+        "label": "Azure SQL",
+        "logo": "https://azure.microsoft.com/svghandler/sql/?width=600&height=600"
+      },
+      {
+        "id": "sql-database",
+        "label": "Azure SQL Database",
+        "logo": "https://azure.microsoft.com/svghandler/sql-database/?width=600&height=600"
+      },
+      {
+        "id": "sql-edge",
+        "label": "Azure SQL Edge",
+        "logo": "https://azure.microsoft.com/svghandler/sql-edge/?width=600&height=600"
+      },
+      {
+        "id": "sql-managed-instance",
+        "label": "Azure SQL Managed Instance",
+        "logo": "https://azure.microsoft.com/svghandler/sql-managed-instance/?width=600&height=600"
+      },
+      {
+        "id": "sql-server-vms",
+        "label": "SQL Server on Azure Virtual Machines",
+        "logo": "https://azure.microsoft.com/svghandler/sql-server-vms/?width=600&height=600"
+      },
+      {
+        "id": "table-storage",
+        "label": "Table Storage",
+        "logo": "https://azure.microsoft.com/svghandler/table-storage/?width=600&height=600"
+      },
+      {
+        "id": "managed-instance-cassandra",
+        "label": "Azure Managed Instance for Apache Cassandra",
+        "logo": "https://azure.microsoft.com/svghandler/managed-instance-cassandra/?width=600&height=600"
+      },
+      {
+        "id": "confidential-ledger",
+        "label": "Azure Confidential Ledger",
+        "logo": "https://azure.microsoft.com/svghandler/confidential-ledger/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Developer Tools",
+    "resources": [
+      {
+        "id": "app-configuration",
+        "label": "App Configuration",
+        "logo": "https://azure.microsoft.com/svghandler/app-configuration/?width=600&height=600"
+      },
+      {
+        "id": "devops",
+        "label": "Azure DevOps",
+        "logo": "https://azure.microsoft.com/svghandler/devops/?width=600&height=600"
+      },
+      {
+        "id": "devtest-labs",
+        "label": "Azure DevTest Labs",
+        "logo": "https://azure.microsoft.com/svghandler/devtest-labs/?width=600&height=600"
+      },
+      {
+        "id": "pipelines",
+        "label": "Azure Pipelines",
+        "logo": "https://azure.microsoft.com/svghandler/pipelines/?width=600&height=600"
+      },
+      {
+        "id": "sdks",
+        "label": "SDKs",
+        "logo": "https://azure.microsoft.com/svghandler/sdks/?width=600&height=600"
+      },
+      {
+        "id": "visual-studio",
+        "label": "Visual Studio",
+        "logo": "https://azure.microsoft.com/svghandler/visual-studio/?width=600&height=600"
+      },
+      {
+        "id": "visual-studio-code",
+        "label": "Visual Studio Code",
+        "logo": "https://azure.microsoft.com/svghandler/visual-studio-code/?width=600&height=600"
+      },
+      {
+        "id": "load-testing",
+        "label": "Azure Load Testing",
+        "logo": "https://azure.microsoft.com/svghandler/load-testing/?width=600&height=600"
+      },
+      {
+        "id": "dev-box",
+        "label": "Microsoft Dev Box",
+        "logo": "https://azure.microsoft.com/svghandler/dev-box/?width=600&height=600"
+      },
+      {
+        "id": "deployment-environments",
+        "label": "Azure Deployment Environments",
+        "logo": "https://azure.microsoft.com/svghandler/deployment-environments/?width=600&height=600"
+      },
+      {
+        "id": "playwright-testing",
+        "label": "Microsoft Playwright Testing",
+        "logo": "https://azure.microsoft.com/svghandler/playwright-testing/?width=600&height=600"
+      },
+      {
+        "id": "managed-ccf",
+        "label": "Azure Managed Confidential Consortium Framework (CCF)",
+        "logo": "https://azure.microsoft.com/svghandler/managed-ccf/?width=600&height=600"
+      },
+      {
+        "id": "trusted-signing",
+        "label": "Trusted Signing",
+        "logo": "https://azure.microsoft.com/svghandler/trusted-signing/?width=600&height=600"
       }
     ]
   },
@@ -368,54 +498,189 @@
     "category": "DevOps",
     "resources": [
       {
+        "id": "azure-boards",
+        "label": "Azure Boards",
+        "logo": "https://azure.microsoft.com/svghandler/azure-boards/?width=600&height=600"
+      },
+      {
         "id": "azure-devops",
         "label": "Azure DevOps",
-        "logo": "https://azure.microsoft.com/svghandler/devops/?width=600&height=315"
+        "logo": "https://azure.microsoft.com/svghandler/azure-devops/?width=600&height=600"
       },
       {
-        "id": "pipelines",
+        "id": "azure-devtest-labs",
+        "label": "Azure DevTest Labs",
+        "logo": "https://azure.microsoft.com/svghandler/azure-devtest-labs/?width=600&height=600"
+      },
+      {
+        "id": "azure-monitor",
+        "label": "Azure Monitor",
+        "logo": "https://azure.microsoft.com/svghandler/monitor/?width=600&height=600"
+      },
+      {
+        "id": "azure-pipelines",
         "label": "Azure Pipelines",
-        "logo": "https://azure.microsoft.com/svghandler/pipelines/?width=600&height=315"
+        "logo": "https://azure.microsoft.com/svghandler/azure-pipelines/?width=600&height=600"
       },
       {
-        "id": "repos",
+        "id": "azure-repos",
         "label": "Azure Repos",
-        "logo": "https://azure.microsoft.com/svghandler/repos/?width=600&height=315"
+        "logo": "https://azure.microsoft.com/svghandler/azure-repos/?width=600&height=600"
       },
       {
-        "id": "artifacts",
-        "label": "Azure Artifacts",
-        "logo": "https://azure.microsoft.com/svghandler/artifacts/?width=600&height=315"
-      },
-      {
-        "id": "boards",
-        "label": "Azure Boards",
-        "logo": "https://azure.microsoft.com/svghandler/boards/?width=600&height=315"
-      },
-      {
-        "id": "test-plans",
+        "id": "azure-test-plans",
         "label": "Azure Test Plans",
-        "logo": "https://azure.microsoft.com/svghandler/test-plans/?width=600&height=315"
+        "logo": "https://azure.microsoft.com/svghandler/azure-test-plans/?width=600&height=600"
       },
       {
-        "id": "git-repos",
-        "label": "Git Repositories",
-        "logo": "https://azure.microsoft.com/svghandler/git-repos/?width=600&height=315"
+        "id": "devops-tool-integrations",
+        "label": "DevOps Tool Integrations",
+        "logo": "https://azure.microsoft.com/svghandler/devops-tool-integrations/?width=600&height=600"
       },
       {
-        "id": "release-management",
-        "label": "Release Management",
-        "logo": "https://azure.microsoft.com/svghandler/release-management/?width=600&height=315"
+        "id": "azure-load-testing",
+        "label": "Azure Load Testing",
+        "logo": "https://azure.microsoft.com/svghandler/azure-load-testing/?width=600&height=600"
       },
       {
-        "id": "deployment-groups",
-        "label": "Deployment Groups",
-        "logo": "https://azure.microsoft.com/svghandler/deployment-groups/?width=600&height=315"
+        "id": "azure-managed-grafana",
+        "label": "Azure Managed Grafana",
+        "logo": "https://azure.microsoft.com/svghandler/azure-managed-grafana/?width=600&height=600"
       },
       {
-        "id": "azure-automation",
-        "label": "Azure Automation",
-        "logo": "https://azure.microsoft.com/svghandler/automation/?width=600&height=315"
+        "id": "microsoft-dev-box",
+        "label": "Microsoft Dev Box",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-dev-box/?width=600&height=600"
+      },
+      {
+        "id": "azure-deployment-environments",
+        "label": "Azure Deployment Environments",
+        "logo": "https://azure.microsoft.com/svghandler/azure-deployment-environments/?width=600&height=600"
+      },
+      {
+        "id": "github-advanced-security-azure-devops",
+        "label": "GitHub Advanced Security for Azure DevOps",
+        "logo": "https://azure.microsoft.com/svghandler/github-advanced-security-azure-devops/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-playwright-testing",
+        "label": "Microsoft Playwright Testing",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-playwright-testing/?width=600&height=600"
+      },
+      {
+        "id": "github-enterprise",
+        "label": "GitHub Enterprise",
+        "logo": "https://azure.microsoft.com/svghandler/github-enterprise/?width=600&height=600"
+      },
+      {
+        "id": "github-advanced-security",
+        "label": "GitHub Advanced Security",
+        "logo": "https://azure.microsoft.com/svghandler/github-advanced-security/?width=600&height=600"
+      },
+      {
+        "id": "github-copilot",
+        "label": "GitHub Copilot",
+        "logo": "https://azure.microsoft.com/svghandler/github-copilot/?width=600&height=600"
+      },
+      {
+        "id": "azure-artifacts",
+        "label": "Azure Artifacts",
+        "logo": "https://azure.microsoft.com/svghandler/azure-artifacts/?width=600&height=600"
+      },
+      {
+        "id": "azure-sql-database",
+        "label": "Azure SQL Database",
+        "logo": "https://azure.microsoft.com/svghandler/azure-sql-database/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Hybrid + Multicloud",
+    "resources": [
+      {
+        "id": "azure-arc",
+        "label": "Azure Arc",
+        "logo": "https://azure.microsoft.com/svghandler/azure-arc/?width=600&height=600"
+      },
+      {
+        "id": "azure-expressroute",
+        "label": "Azure ExpressRoute",
+        "logo": "https://azure.microsoft.com/svghandler/azure-expressroute/?width=600&height=600"
+      },
+      {
+        "id": "azure-iot-edge",
+        "label": "Azure IoT Edge",
+        "logo": "https://azure.microsoft.com/svghandler/azure-iot-edge/?width=600&height=600"
+      },
+      {
+        "id": "azure-stack",
+        "label": "Azure Stack",
+        "logo": "https://azure.microsoft.com/svghandler/azure-stack/?width=600&height=600"
+      },
+      {
+        "id": "azure-stack-hci",
+        "label": "Azure Stack HCI",
+        "logo": "https://azure.microsoft.com/svghandler/azure-stack-hci/?width=600&height=600"
+      },
+      {
+        "id": "azure-stack-hub",
+        "label": "Azure Stack Hub",
+        "logo": "https://azure.microsoft.com/svghandler/azure-stack-hub/?width=600&height=600"
+      },
+      {
+        "id": "azure-stack-edge",
+        "label": "Azure Stack Edge",
+        "logo": "https://azure.microsoft.com/svghandler/azure-stack-edge/?width=600&height=600"
+      },
+      {
+        "id": "azure-kubernetes-service-edge-essentials",
+        "label": "Azure Kubernetes Service Edge Essentials",
+        "logo": "https://azure.microsoft.com/svghandler/azure-kubernetes-service-edge-essentials/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Identity",
+    "resources": [
+      {
+        "id": "microsoft-entra-domain-services",
+        "label": "Microsoft Entra Domain Services",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-entra-domain-services/?width=600&height=600"
+      },
+      {
+        "id": "azure-active-directory",
+        "label": "Azure Active Directory B2C",
+        "logo": "https://azure.microsoft.com/svghandler/azure-active-directory-b2c/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-entra-external-id",
+        "label": "Microsoft Entra External ID",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-entra-external-id/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-entra-permissions-management",
+        "label": "Microsoft Entra Permissions Management",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-entra-permissions-management/?width=600&height=600"
+      },
+      {
+        "id": "azure-information-protection",
+        "label": "Azure Information Protection",
+        "logo": "https://azure.microsoft.com/svghandler/azure-information-protection/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-defender-for-identity",
+        "label": "Microsoft Defender for Identity",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-defender-for-identity/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-identity-manager",
+        "label": "Microsoft Identity Manager",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-identity-manager/?width=600&height=600"
+      },
+      {
+        "id": "azure-key-vault",
+        "label": "Azure Key Vault",
+        "logo": "https://azure.microsoft.com/svghandler/azure-key-vault/?width=600&height=600"
       }
     ]
   },
@@ -423,54 +688,664 @@
     "category": "Integration",
     "resources": [
       {
-        "id": "logic-apps",
-        "label": "Logic Apps",
-        "logo": "https://azure.microsoft.com/svghandler/logic-apps/?width=600&height=315"
+        "id": "api-management",
+        "label": "API Management",
+        "logo": "https://azure.microsoft.com/svghandler/api-management/?width=600&height=600"
       },
       {
-        "id": "service-bus",
-        "label": "Service Bus",
-        "logo": "https://azure.microsoft.com/svghandler/service-bus/?width=600&height=315"
+        "id": "azure-health-data-services",
+        "label": "Azure Health Data Services",
+        "logo": "https://azure.microsoft.com/svghandler/azure-health-data-services/?width=600&height=600"
       },
       {
         "id": "event-grid",
         "label": "Event Grid",
-        "logo": "https://azure.microsoft.com/svghandler/event-grid/?width=600&height=315"
+        "logo": "https://azure.microsoft.com/svghandler/event-grid/?width=600&height=600"
       },
+      {
+        "id": "logic-apps",
+        "label": "Logic Apps",
+        "logo": "https://azure.microsoft.com/svghandler/logic-apps/?width=600&height=600"
+      },
+      {
+        "id": "service-bus",
+        "label": "Service Bus",
+        "logo": "https://azure.microsoft.com/svghandler/service-bus/?width=600&height=600"
+      },
+      {
+        "id": "azure-web-pubsub",
+        "label": "Azure Web PubSub",
+        "logo": "https://azure.microsoft.com/svghandler/azure-web-pubsub/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-energy-data-services",
+        "label": "Microsoft Energy Data Services",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-energy-data-services/?width=600&height=600"
+      },
+      {
+        "id": "azure-data-manager-for-agriculture",
+        "label": "Azure Data Manager for Agriculture",
+        "logo": "https://azure.microsoft.com/svghandler/azure-data-manager-for-agriculture/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Internet of Things",
+    "resources": [
+      {
+        "id": "azure-digital-twins",
+        "label": "Azure Digital Twins",
+        "logo": "https://azure.microsoft.com/svghandler/azure-digital-twins/?width=600&height=600"
+      },
+      {
+        "id": "azure-iot-central",
+        "label": "Azure IoT Central",
+        "logo": "https://azure.microsoft.com/svghandler/azure-iot-central/?width=600&height=600"
+      },
+      {
+        "id": "azure-iot-edge",
+        "label": "Azure IoT Edge",
+        "logo": "https://azure.microsoft.com/svghandler/azure-iot-edge/?width=600&height=600"
+      },
+      {
+        "id": "azure-iot-hub",
+        "label": "Azure IoT Hub",
+        "logo": "https://azure.microsoft.com/svghandler/azure-iot-hub/?width=600&height=600"
+      },
+      {
+        "id": "azure-maps",
+        "label": "Azure Maps",
+        "logo": "https://azure.microsoft.com/svghandler/azure-maps/?width=600&height=600"
+      },
+      {
+        "id": "azure-rtos",
+        "label": "Azure RTOS",
+        "logo": "https://azure.microsoft.com/svghandler/azure-rtos/?width=600&height=600"
+      },
+      {
+        "id": "azure-sphere",
+        "label": "Azure Sphere",
+        "logo": "https://azure.microsoft.com/svghandler/azure-sphere/?width=600&height=600"
+      },
+      {
+        "id": "azure-sql-edge",
+        "label": "Azure SQL Edge",
+        "logo": "https://azure.microsoft.com/svghandler/azure-sql-edge/?width=600&height=600"
+      },
+      {
+        "id": "azure-stream-analytics",
+        "label": "Azure Stream Analytics",
+        "logo": "https://azure.microsoft.com/svghandler/azure-stream-analytics/?width=600&height=600"
+      },
+      {
+        "id": "azure-time-series-insights",
+        "label": "Azure Time Series Insights",
+        "logo": "https://azure.microsoft.com/svghandler/azure-time-series-insights/?width=600&height=600"
+      },
+      {
+        "id": "windows-for-iot",
+        "label": "Windows for IoT",
+        "logo": "https://azure.microsoft.com/svghandler/windows-for-iot/?width=600&height=600"
+      },
+      {
+        "id": "event-grid",
+        "label": "Event Grid",
+        "logo": "https://azure.microsoft.com/svghandler/event-grid/?width=600&height=600"
+      },
+      {
+        "id": "notification-hubs",
+        "label": "Notification Hubs",
+        "logo": "https://azure.microsoft.com/svghandler/notification-hubs/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Management and Governance",
+    "resources": [
+      {
+        "id": "microsoft-copilot-azure",
+        "label": "Microsoft Copilot in Azure",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-copilot-azure/?width=600&height=600"
+      },
+      {
+        "id": "azure-automation",
+        "label": "Azure Automation",
+        "logo": "https://azure.microsoft.com/svghandler/azure-automation/?width=600&height=600"
+      },
+      {
+        "id": "azure-advisor",
+        "label": "Azure Advisor",
+        "logo": "https://azure.microsoft.com/svghandler/azure-advisor/?width=600&height=600"
+      },
+      {
+        "id": "defender-external-attack-surface-management",
+        "label": "Defender External Attack Surface Management",
+        "logo": "https://azure.microsoft.com/svghandler/defender-external-attack-surface-management/?width=600&height=600"
+      },
+      {
+        "id": "azure-backup",
+        "label": "Azure Backup",
+        "logo": "https://azure.microsoft.com/svghandler/azure-backup/?width=600&height=600"
+      },
+      {
+        "id": "azure-blueprints",
+        "label": "Azure Blueprints",
+        "logo": "https://azure.microsoft.com/svghandler/azure-blueprints/?width=600&height=600"
+      },
+      {
+        "id": "azure-lighthouse",
+        "label": "Azure Lighthouse",
+        "logo": "https://azure.microsoft.com/svghandler/azure-lighthouse/?width=600&height=600"
+      },
+      {
+        "id": "azure-managed-applications",
+        "label": "Azure Managed Applications",
+        "logo": "https://azure.microsoft.com/svghandler/azure-managed-applications/?width=600&height=600"
+      },
+      {
+        "id": "azure-migrate",
+        "label": "Azure Migrate",
+        "logo": "https://azure.microsoft.com/svghandler/azure-migrate/?width=600&height=600"
+      },
+      {
+        "id": "azure-monitor",
+        "label": "Azure Monitor",
+        "logo": "https://azure.microsoft.com/svghandler/azure-monitor/?width=600&height=600"
+      },
+      {
+        "id": "azure-policy",
+        "label": "Azure Policy",
+        "logo": "https://azure.microsoft.com/svghandler/azure-policy/?width=600&height=600"
+      },
+      {
+        "id": "azure-resource-manager",
+        "label": "Azure Resource Manager",
+        "logo": "https://azure.microsoft.com/svghandler/azure-resource-manager/?width=600&height=600"
+      },
+      {
+        "id": "azure-site-recovery",
+        "label": "Azure Site Recovery",
+        "logo": "https://azure.microsoft.com/svghandler/azure-site-recovery/?width=600&height=600"
+      },
+      {
+        "id": "cloud-shell",
+        "label": "Cloud Shell",
+        "logo": "https://azure.microsoft.com/svghandler/cloud-shell/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-cost-management",
+        "label": "Microsoft Cost Management",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-cost-management/?width=600&height=600"
+      },
+      {
+        "id": "azure-automanage",
+        "label": "Azure Automanage",
+        "logo": "https://azure.microsoft.com/svghandler/azure-automanage/?width=600&height=600"
+      },
+      {
+        "id": "azure-resource-mover",
+        "label": "Azure Resource Mover",
+        "logo": "https://azure.microsoft.com/svghandler/azure-resource-mover/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-purview",
+        "label": "Microsoft Purview",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-purview/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Media",
+    "resources": [
+      {
+        "id": "azure-media-services",
+        "label": "Azure Media Services",
+        "logo": "https://azure.microsoft.com/svghandler/media-services/?width=600&height=600"
+      },
+      {
+        "id": "live-on-demand-streaming",
+        "label": "Live and On-Demand Streaming",
+        "logo": "https://azure.microsoft.com/svghandler/live-on-demand-streaming/?width=600&height=600"
+      },
+      {
+        "id": "encoding",
+        "label": "Encoding",
+        "logo": "https://azure.microsoft.com/svghandler/encoding/?width=600&height=600"
+      },
+      {
+        "id": "content-protection",
+        "label": "Content Protection",
+        "logo": "https://azure.microsoft.com/svghandler/content-protection/?width=600&height=600"
+      },
+      {
+        "id": "azure-video-indexer",
+        "label": "Azure Video Indexer",
+        "logo": "https://azure.microsoft.com/svghandler/video-indexer/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Migration",
+    "resources": [
+      {
+        "id": "azure-database-migration-service",
+        "label": "Azure Database Migration Service",
+        "logo": "https://azure.microsoft.com/svghandler/database-migration-service/?width=600&height=600"
+      },
+      {
+        "id": "azure-migrate",
+        "label": "Azure Migrate",
+        "logo": "https://azure.microsoft.com/svghandler/migrate/?width=600&height=600"
+      },
+      {
+        "id": "azure-site-recovery",
+        "label": "Azure Site Recovery",
+        "logo": "https://azure.microsoft.com/svghandler/site-recovery/?width=600&height=600"
+      },
+      {
+        "id": "azure-data-box",
+        "label": "Azure Data Box",
+        "logo": "https://azure.microsoft.com/svghandler/data-box/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-cost-management",
+        "label": "Microsoft Cost Management",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-cost-management/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Mixed Reality",
+    "resources": [
+      {
+        "id": "azure-object-anchors",
+        "label": "Azure Object Anchors",
+        "logo": "https://azure.microsoft.com/svghandler/azure-object-anchors/?width=600&height=600"
+      },
+      {
+        "id": "azure-remote-rendering",
+        "label": "Azure Remote Rendering",
+        "logo": "https://azure.microsoft.com/svghandler/azure-remote-rendering/?width=600&height=600"
+      },
+      {
+        "id": "azure-spatial-anchors",
+        "label": "Azure Spatial Anchors",
+        "logo": "https://azure.microsoft.com/svghandler/azure-spatial-anchors/?width=600&height=600"
+      },
+      {
+        "id": "hololens-2",
+        "label": "HoloLens 2",
+        "logo": "https://azure.microsoft.com/svghandler/hololens-2/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Mobile",
+    "resources": [
+      {
+        "id": "app-center",
+        "label": "App Center",
+        "logo": "https://azure.microsoft.com/svghandler/app-center/?width=600&height=600"
+      },
+      {
+        "id": "azure-communication-services",
+        "label": "Azure Communication Services",
+        "logo": "https://azure.microsoft.com/svghandler/azure-communication-services/?width=600&height=600"
+      },
+      {
+        "id": "notification-hubs",
+        "label": "Notification Hubs",
+        "logo": "https://azure.microsoft.com/svghandler/notification-hubs/?width=600&height=600"
+      },
+      {
+        "id": "mobile-apps",
+        "label": "Mobile Apps",
+        "logo": "https://azure.microsoft.com/svghandler/mobile-apps/?width=600&height=600"
+      },
+      {
+        "id": "azure-web-pubsub",
+        "label": "Azure Web PubSub",
+        "logo": "https://azure.microsoft.com/svghandler/azure-web-pubsub/?width=600&height=600"
+      },
+      {
+        "id": "azure-maps",
+        "label": "Azure Maps",
+        "logo": "https://azure.microsoft.com/svghandler/azure-maps/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Networking",
+    "resources": [
+      {
+        "id": "application-gateway",
+        "label": "Application Gateway",
+        "logo": "https://azure.microsoft.com/svghandler/application-gateway/?width=600&height=600"
+      },
+      {
+        "id": "azure-bastion",
+        "label": "Azure Bastion",
+        "logo": "https://azure.microsoft.com/svghandler/azure-bastion/?width=600&height=600"
+      },
+      {
+        "id": "azure-ddos-protection",
+        "label": "Azure DDoS Protection",
+        "logo": "https://azure.microsoft.com/svghandler/azure-ddos-protection/?width=600&height=600"
+      },
+      {
+        "id": "azure-dns",
+        "label": "Azure DNS",
+        "logo": "https://azure.microsoft.com/svghandler/azure-dns/?width=600&height=600"
+      },
+      {
+        "id": "azure-expressroute",
+        "label": "Azure ExpressRoute",
+        "logo": "https://azure.microsoft.com/svghandler/azure-expressroute/?width=600&height=600"
+      },
+      {
+        "id": "azure-firewall",
+        "label": "Azure Firewall",
+        "logo": "https://azure.microsoft.com/svghandler/azure-firewall/?width=600&height=600"
+      },
+      {
+        "id": "azure-orbital-ground-station",
+        "label": "Azure Orbital Ground Station",
+        "logo": "https://azure.microsoft.com/svghandler/azure-orbital-ground-station/?width=600&height=600"
+      },
+      {
+        "id": "azure-route-server",
+        "label": "Azure Route Server",
+        "logo": "https://azure.microsoft.com/svghandler/azure-route-server/?width=600&height=600"
+      },
+      {
+        "id": "azure-private-5g-core",
+        "label": "Azure Private 5G Core",
+        "logo": "https://azure.microsoft.com/svghandler/azure-private-5g-core/?width=600&height=600"
+      },
+      {
+        "id": "azure-communications-gateway",
+        "label": "Azure Communications Gateway",
+        "logo": "https://azure.microsoft.com/svghandler/azure-communications-gateway/?width=600&height=600"
+      },
+      {
+        "id": "azure-operator-5g-core",
+        "label": "Azure Operator 5G Core",
+        "logo": "https://azure.microsoft.com/svghandler/azure-operator-5g-core/?width=600&height=600"
+      },
+      {
+        "id": "azure-front-door",
+        "label": "Azure Front Door",
+        "logo": "https://azure.microsoft.com/svghandler/azure-front-door/?width=600&height=600"
+      },
+      {
+        "id": "azure-network-function-manager",
+        "label": "Azure Network Function Manager",
+        "logo": "https://azure.microsoft.com/svghandler/azure-network-function-manager/?width=600&height=600"
+      },
+      {
+        "id": "azure-virtual-network-manager",
+        "label": "Azure Virtual Network Manager",
+        "logo": "https://azure.microsoft.com/svghandler/azure-virtual-network-manager/?width=600&height=600"
+      },
+      {
+        "id": "azure-nat-gateway",
+        "label": "Azure NAT Gateway",
+        "logo": "https://azure.microsoft.com/svghandler/azure-nat-gateway/?width=600&height=600"
+      },
+      {
+        "id": "azure-programmable-connectivity",
+        "label": "Azure Programmable Connectivity",
+        "logo": "https://azure.microsoft.com/svghandler/azure-programmable-connectivity/?width=600&height=600"
+      },
+      {
+        "id": "azure-private-link",
+        "label": "Azure Private Link",
+        "logo": "https://azure.microsoft.com/svghandler/azure-private-link/?width=600&height=600"
+      },
+      {
+        "id": "azure-firewall-manager",
+        "label": "Azure Firewall Manager",
+        "logo": "https://azure.microsoft.com/svghandler/azure-firewall-manager/?width=600&height=600"
+      },
+      {
+        "id": "content-delivery-network",
+        "label": "Content Delivery Network",
+        "logo": "https://azure.microsoft.com/svghandler/content-delivery-network/?width=600&height=600"
+      },
+      {
+        "id": "network-watcher",
+        "label": "Network Watcher",
+        "logo": "https://azure.microsoft.com/svghandler/network-watcher/?width=600&height=600"
+      },
+      {
+        "id": "traffic-manager",
+        "label": "Traffic Manager",
+        "logo": "https://azure.microsoft.com/svghandler/traffic-manager/?width=600&height=600"
+      },
+      {
+        "id": "virtual-network",
+        "label": "Virtual Network",
+        "logo": "https://azure.microsoft.com/svghandler/virtual-network/?width=600&height=600"
+      },
+      {
+        "id": "virtual-wan",
+        "label": "Virtual WAN",
+        "logo": "https://azure.microsoft.com/svghandler/virtual-wan/?width=600&height=600"
+      },
+      {
+        "id": "vpn-gateway",
+        "label": "VPN Gateway",
+        "logo": "https://azure.microsoft.com/svghandler/vpn-gateway/?width=600&height=600"
+      },
+      {
+        "id": "web-application-firewall",
+        "label": "Web Application Firewall",
+        "logo": "https://azure.microsoft.com/svghandler/web-application-firewall/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Security",
+    "resources": [
+      {
+        "id": "microsoft-defender-for-cloud",
+        "label": "Microsoft Defender for Cloud",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-defender-for-cloud/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-sentinel",
+        "label": "Microsoft Sentinel",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-sentinel/?width=600&height=600"
+      },
+      {
+        "id": "azure-key-vault",
+        "label": "Azure Key Vault",
+        "logo": "https://azure.microsoft.com/svghandler/azure-key-vault/?width=600&height=600"
+      },
+      {
+        "id": "azure-information-protection",
+        "label": "Azure Information Protection",
+        "logo": "https://azure.microsoft.com/svghandler/azure-information-protection/?width=600&height=600"
+      },
+      {
+        "id": "azure-firewall-manager",
+        "label": "Azure Firewall Manager",
+        "logo": "https://azure.microsoft.com/svghandler/azure-firewall-manager/?width=600&height=600"
+      },
+      {
+        "id": "azure-security-center",
+        "label": "Azure Security Center",
+        "logo": "https://azure.microsoft.com/svghandler/azure-security-center/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-defender-for-identity",
+        "label": "Microsoft Defender for Identity",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-defender-for-identity/?width=600&height=600"
+      },
+      {
+        "id": "azure-ddos-protection",
+        "label": "Azure DDoS Protection",
+        "logo": "https://azure.microsoft.com/svghandler/azure-ddos-protection/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Storage",
+    "resources": [
+      {
+        "id": "azure-blob-storage",
+        "label": "Azure Blob Storage",
+        "logo": "https://azure.microsoft.com/svghandler/azure-blob-storage/?width=600&height=600"
+      },
+      {
+        "id": "azure-data-box",
+        "label": "Azure Data Box",
+        "logo": "https://azure.microsoft.com/svghandler/azure-data-box/?width=600&height=600"
+      },
+      {
+        "id": "azure-data-lake-storage",
+        "label": "Azure Data Lake Storage",
+        "logo": "https://azure.microsoft.com/svghandler/azure-data-lake-storage/?width=600&height=600"
+      },
+      {
+        "id": "azure-disk-storage",
+        "label": "Azure Disk Storage",
+        "logo": "https://azure.microsoft.com/svghandler/azure-disk-storage/?width=600&height=600"
+      },
+      {
+        "id": "azure-files",
+        "label": "Azure Files",
+        "logo": "https://azure.microsoft.com/svghandler/azure-files/?width=600&height=600"
+      },
+      {
+        "id": "azure-netapp-files",
+        "label": "Azure NetApp Files",
+        "logo": "https://azure.microsoft.com/svghandler/azure-netapp-files/?width=600&height=600"
+      },
+      {
+        "id": "azure-queue-storage",
+        "label": "Azure Queue Storage",
+        "logo": "https://azure.microsoft.com/svghandler/azure-queue-storage/?width=600&height=600"
+      },
+      {
+        "id": "azure-storage-accounts",
+        "label": "Azure Storage Accounts",
+        "logo": "https://azure.microsoft.com/svghandler/azure-storage-accounts/?width=600&height=600"
+      },
+      {
+        "id": "azure-elastic-san",
+        "label": "Azure Elastic SAN",
+        "logo": "https://azure.microsoft.com/svghandler/azure-elastic-san/?width=600&height=600"
+      },
+      {
+        "id": "azure-confidential-ledger",
+        "label": "Azure Confidential Ledger",
+        "logo": "https://azure.microsoft.com/svghandler/azure-confidential-ledger/?width=600&height=600"
+      },
+      {
+        "id": "azure-container-storage",
+        "label": "Azure Container Storage",
+        "logo": "https://azure.microsoft.com/svghandler/azure-container-storage/?width=600&height=600"
+      },
+      {
+        "id": "azure-storage-explorer",
+        "label": "Azure Storage Explorer",
+        "logo": "https://azure.microsoft.com/svghandler/azure-storage-explorer/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Virtual Desktop Infrastructure",
+    "resources": [
+      {
+        "id": "azure-lab-services",
+        "label": "Azure Lab Services",
+        "logo": "https://azure.microsoft.com/svghandler/azure-lab-services/?width=600&height=600"
+      },
+      {
+        "id": "azure-virtual-desktop",
+        "label": "Azure Virtual Desktop",
+        "logo": "https://azure.microsoft.com/svghandler/azure-virtual-desktop/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-dev-box",
+        "label": "Microsoft Dev Box",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-dev-box/?width=600&height=600"
+      }
+    ]
+  },
+  {
+    "category": "Web",
+    "resources": [
       {
         "id": "api-management",
         "label": "API Management",
-        "logo": "https://azure.microsoft.com/svghandler/api-management/?width=600&height=315"
+        "logo": "https://azure.microsoft.com/svghandler/api-management/?width=600&height=600"
       },
       {
-        "id": "integration-account",
-        "label": "Integration Account",
-        "logo": "https://azure.microsoft.com/svghandler/integration-account/?width=600&height=315"
+        "id": "app-configuration",
+        "label": "App Configuration",
+        "logo": "https://azure.microsoft.com/svghandler/app-configuration/?width=600&height=600"
       },
       {
-        "id": "event-hubs",
-        "label": "Event Hubs",
-        "logo": "https://azure.microsoft.com/svghandler/event-hubs/?width=600&height=315"
+        "id": "app-service",
+        "label": "App Service",
+        "logo": "https://azure.microsoft.com/svghandler/app-service/?width=600&height=600"
       },
       {
-        "id": "azure-functions",
-        "label": "Azure Functions",
-        "logo": "https://ms-azuretools.gallerycdn.vsassets.io/extensions/ms-azuretools/vscode-azurefunctions/1.15.2/1723154983964/Microsoft.VisualStudio.Services.Icons.Default"
+        "id": "azure-ai-search",
+        "label": "Azure AI Search",
+        "logo": "https://azure.microsoft.com/svghandler/azure-ai-search/?width=600&height=600"
       },
       {
-        "id": "azure-data-factory",
-        "label": "Azure Data Factory",
-        "logo": "https://azure.microsoft.com/svghandler/data-factory/?width=600&height=315"
+        "id": "azure-maps",
+        "label": "Azure Maps",
+        "logo": "https://azure.microsoft.com/svghandler/azure-maps/?width=600&height=600"
       },
       {
-        "id": "iot-hub",
-        "label": "IoT Hub",
-        "logo": "https://azure.microsoft.com/svghandler/iot-hub/?width=600&height=315"
+        "id": "azure-signalr-service",
+        "label": "Azure SignalR Service",
+        "logo": "https://azure.microsoft.com/svghandler/azure-signalr-service/?width=600&height=600"
       },
       {
-        "id": "event-driven-architecture",
-        "label": "Event Driven Architecture",
-        "logo": "https://azure.microsoft.com/svghandler/event-driven-architecture/?width=600&height=315"
+        "id": "content-delivery-network",
+        "label": "Content Delivery Network",
+        "logo": "https://azure.microsoft.com/svghandler/content-delivery-network/?width=600&height=600"
+      },
+      {
+        "id": "notification-hubs",
+        "label": "Notification Hubs",
+        "logo": "https://azure.microsoft.com/svghandler/notification-hubs/?width=600&height=600"
+      },
+      {
+        "id": "static-web-apps",
+        "label": "Static Web Apps",
+        "logo": "https://azure.microsoft.com/svghandler/static-web-apps/?width=600&height=600"
+      },
+      {
+        "id": "azure-communication-services",
+        "label": "Azure Communication Services",
+        "logo": "https://azure.microsoft.com/svghandler/azure-communication-services/?width=600&height=600"
+      },
+      {
+        "id": "azure-web-pubsub",
+        "label": "Azure Web PubSub",
+        "logo": "https://azure.microsoft.com/svghandler/azure-web-pubsub/?width=600&height=600"
+      },
+      {
+        "id": "azure-fluid-relay",
+        "label": "Azure Fluid Relay",
+        "logo": "https://azure.microsoft.com/svghandler/azure-fluid-relay/?width=600&height=600"
+      },
+      {
+        "id": "web-app-for-containers",
+        "label": "Web App for Containers",
+        "logo": "https://azure.microsoft.com/svghandler/web-app-for-containers/?width=600&height=600"
+      },
+      {
+        "id": "microsoft-playwright-testing",
+        "label": "Microsoft Playwright Testing",
+        "logo": "https://azure.microsoft.com/svghandler/microsoft-playwright-testing/?width=600&height=600"
       }
     ]
   }

@@ -3,7 +3,7 @@ import {
   Select,
   Button,
   Heading,
-} from '../Content/ContentStyles';
+} from "../Content/ContentStyles";
 
 const NestingOptions = ({
   nodes,
@@ -13,6 +13,8 @@ const NestingOptions = ({
   setSelectedParentId,
   handleConfirm,
 }: any) => {
+  console.log(nodes);
+
   return (
     <ControlsContainer>
       <Heading>Nesting Options</Heading>
@@ -20,37 +22,35 @@ const NestingOptions = ({
         <label>
           Node:
           <Select
-            value={selectedNodeId || ''}
+            value={selectedNodeId || ""}
             onChange={(e) => setSelectedNodeId(e.target.value)}
           >
-            <option value='' disabled>
+            <option value="" disabled>
               Select Node
             </option>
             {nodes.map((node: any) => (
               <option key={node.id} value={node.id}>
-                {node.data.label?.props?.children
-                  ? node.data.label.props.children[1]
-                  : node.data.label}
+                {node.text == null ? node.data.label : node.text}
               </option>
             ))}
           </Select>
         </label>
       </div>
-      <div style={{ marginTop: '10px' }}>
+      <div style={{ marginTop: "10px" }}>
         <label>
           Parent:
           <Select
-            value={selectedParentId || ''}
+            value={selectedParentId || ""}
             onChange={(e) => setSelectedParentId(e.target.value)}
           >
-            <option value='' disabled>
+            <option value="" disabled>
               Select Parent
             </option>
             {nodes
               .filter(
                 (node: any) =>
                   nodes.some((n: any) => n.parentId === node.id) ||
-                  node.type === 'group'
+                  node.type === "group"
               )
               .map((node: any) => (
                 <option key={node.id} value={node.id}>

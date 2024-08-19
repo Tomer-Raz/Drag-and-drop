@@ -9,6 +9,7 @@ export const initialNodes = [
   {
     id: '2',
     data: { label: 'Subscription' },
+    text: "subscription",
     position: { x: 100, y: 150 },
     className: 'light',
     style: { backgroundColor: 'rgba(255, 0, 0, 0.2)', width: 200, height: 200 },

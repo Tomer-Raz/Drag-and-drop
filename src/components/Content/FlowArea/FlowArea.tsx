@@ -11,7 +11,15 @@ import {
 import '@xyflow/react/dist/style.css';
 import azureResources from '../../../utils/azureResources.json';
 import NestingOptions from '../NestingOptions/NestingsOptions';
-import { FlowContainer, NodeLabelContainer, NodeLabelIcon, NodeLabelText, NodeHeader } from './FlowArea.styles';
+import {
+  FlowContainer,
+  CustomNodeContainer,
+  NodeIconContainer,
+  NodeLabelIcon,
+  NodeContent,
+  NodeTypeText,
+  NodeLabelText,
+} from './FlowArea.styles';
 
 const FlowArea = ({
   initialNodes,
@@ -44,8 +52,6 @@ const FlowArea = ({
         .flatMap((category: any) => category.resources)
         .find((r: any) => r.id === type);
 
-      const isResourceGroup = resource?.label === 'Resource Group';
-
       const newNode: any = {
         id,
         type,
@@ -55,24 +61,28 @@ const FlowArea = ({
         },
         parentId: selectedParentId || null,
         extent: 'parent',
+        text: resource?.label,
         data: {
           label: (
-            <NodeLabelContainer>
-              {isResourceGroup && (
-                <>
-                  <NodeLabelIcon
-                    src="https://www.ssw.com.au/rules/static/97576d71a125f696f1f6d61b1e7efd24/6f3f2/icon-naming-azure_1710232021931.png"
-                    alt="Resource Group"
-                  />
-                  <div>
-                    <NodeHeader>RG</NodeHeader>
-                    <NodeLabelText>{resource?.label}</NodeLabelText>
-                  </div>
-                </>
-              )}
-              {!isResourceGroup && <NodeLabelText>{resource?.label}</NodeLabelText>}
-            </NodeLabelContainer>
+            <CustomNodeContainer>
+              <NodeIconContainer>
+                <NodeLabelIcon
+                  src={resource?.logo}
+                  alt={`${resource?.label} logo`}
+                />
+              </NodeIconContainer>
+              <NodeContent>
+                <NodeTypeText>{resource?.label}</NodeTypeText>
+                <NodeLabelText>{resource?.label}</NodeLabelText>
+              </NodeContent>
+            </CustomNodeContainer>
           ),
+        },
+        style: {
+          width: 'auto',
+          backgroundColor: 'transparent',
+          border: 'none',
+          padding: '0',
         },
       };
 
