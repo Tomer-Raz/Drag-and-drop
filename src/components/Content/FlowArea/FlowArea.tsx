@@ -88,7 +88,7 @@ const FlowArea = ({
 
       setNodes((nds: any) => nds.concat(newNode));
     },
-    [nodes, setNodes]
+    [nodes, setNodes, selectedParentId]
   );
 
   const onDragOver = useCallback((event: any) => {
@@ -113,32 +113,23 @@ const FlowArea = ({
     }
   };
 
-  const onNodeDrag = useCallback(
-    (node: any) => {
-      const parentNode = nodes.find((n: any) => n.id === node.parentId);
+  const onNodeDragStop = useCallback(
+    (event: any, node: any) => {
+      const draggedNode = nodes.find((n: any) => n.id === node.id);
+      const parentNode = nodes.find(
+        (n: any) =>
+          n.id !== node.id &&
+          n.type === 'group' &&
+          n.position.x <= node.position.x &&
+          n.position.y <= node.position.y &&
+          n.position.x + (n.style?.width || 0) >= node.position.x &&
+          n.position.y + (n.style?.height || 0) >= node.position.y
+      );
 
       if (parentNode) {
-        const parentStyle = parentNode.style || {};
-        const parentWidth: any = parentStyle.width || 0;
-        const parentHeight: any = parentStyle.height || 0;
-
-        const nodeWidth = node.style?.width || 0;
-        const nodeHeight = node.style?.height || 0;
-
-        const newPosition = { ...node.position };
-
-        newPosition.x = Math.max(
-          0,
-          Math.min(newPosition.x, parentWidth - nodeWidth)
-        );
-        newPosition.y = Math.max(
-          0,
-          Math.min(newPosition.y, parentHeight - nodeHeight)
-        );
-
         setNodes((nds: any) =>
           nds.map((n: any) =>
-            n.id === node.id ? { ...n, position: newPosition } : n
+            n.id === draggedNode?.id ? { ...n, parentId: parentNode.id } : n
           )
         );
       }
@@ -157,7 +148,7 @@ const FlowArea = ({
         onDrop={onDrop as any}
         onDragOver={onDragOver as any}
         onNodeClick={handleNodeClick as any}
-        onNodeDrag={onNodeDrag as any}
+        onNodeDragStop={onNodeDragStop as any}
         fitView
       >
         <MiniMap />

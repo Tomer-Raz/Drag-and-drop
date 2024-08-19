@@ -10,9 +10,9 @@ export const initialNodes = [
     id: '2',
     data: { label: 'Subscription' },
     text: "subscription",
-    position: { x: 100, y: 150 },
+    position: { x: 10, y: 150 },
     className: 'light',
-    style: { backgroundColor: 'rgba(255, 0, 0, 0.2)', width: 200, height: 200 },
+    style: { backgroundColor: 'rgba(255, 0, 0, 0.2)', width: 400, height: 400 },
     type: 'group',
   },
   {
@@ -31,7 +31,7 @@ export const initialNodes = [
   {
     id: '4',
     data: { label: 'Group B' },
-    position: { x: 320, y: 200 },
+    position: { x: 450, y: 200 },
     className: 'light',
     style: { backgroundColor: 'rgba(255, 0, 0, 0.2)', width: 300, height: 300 },
     type: 'group',
